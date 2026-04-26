@@ -1,0 +1,7 @@
+run
+run_edges
+run_nodes
+process.sh
+check_graph_type
+count_timestamps
+check_symmetric

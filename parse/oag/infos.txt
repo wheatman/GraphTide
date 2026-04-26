@@ -1,0 +1,96 @@
+======infos for v5_oag_publication_1.json ======== 
+num of coauthor edges: 195772734 
+num of ref edges: 70311887 
+start year: 2000 
+end year: 2026 
+
+======infos for v5_oag_publication_2.json ======== 
+num of coauthor edges: 183272653 
+num of ref edges: 70146377 
+start year: 2000 
+end year: 2026 
+
+======infos for v5_oag_publication_3.json ======== 
+num of coauthor edges: 179106263 
+num of ref edges: 77653639 
+start year: 2000 
+end year: 2026 
+
+======infos for v5_oag_publication_4.json ======== 
+num of coauthor edges: 207457174 
+num of ref edges: 81816700 
+start year: 2000 
+end year: 2026 
+
+======infos for v5_oag_publication_5.json ======== 
+num of coauthor edges: 211038589 
+num of ref edges: 81597723 
+start year: 2000 
+end year: 2026 
+
+======infos for v5_oag_publication_6.json ======== 
+num of coauthor edges: 199104562 
+num of ref edges: 81998572 
+start year: 2000 
+end year: 2026 
+
+======infos for v5_oag_publication_7.json ======== 
+num of coauthor edges: 212995622 
+num of ref edges: 82419086 
+start year: 2000 
+end year: 2026 
+
+======infos for v5_oag_publication_8.json ======== 
+num of coauthor edges: 179109442 
+num of ref edges: 82079288 
+start year: 2000 
+end year: 2026 
+
+======infos for v5_oag_publication_9.json ======== 
+num of coauthor edges: 221372702 
+num of ref edges: 81336655 
+start year: 2000 
+end year: 2026 
+
+======infos for v5_oag_publication_10.json ======== 
+num of coauthor edges: 180943294 
+num of ref edges: 81545765 
+start year: 2000 
+end year: 2026 
+
+======infos for v5_oag_publication_11.json ======== 
+num of coauthor edges: 202816560 
+num of ref edges: 81986559 
+start year: 2000 
+end year: 2026 
+
+======infos for v5_oag_publication_12.json ======== 
+num of coauthor edges: 193655879 
+num of ref edges: 82083383 
+start year: 2000 
+end year: 2026 
+
+======infos for v5_oag_publication_13.json ======== 
+num of coauthor edges: 202769007 
+num of ref edges: 81603929 
+start year: 2000 
+end year: 2026 
+
+======infos for v5_oag_publication_14.json ======== 
+num of coauthor edges: 205342049 
+num of ref edges: 0 
+start year: 2000 
+end year: 2026 
+
+======infos for v5_oag_publication_15.json ======== 
+num of coauthor edges: 211881889 
+num of ref edges: 81485866 
+start year: 2000 
+end year: 2026 
+
+======infos for v5_oag_publication_16.json ======== 
+num of coauthor edges: 45839800 
+num of ref edges: 20641328 
+start year: 2000 
+end year: 2026 
+

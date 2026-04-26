@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyd
+*.egg
+*.egg-info
+dist/
+build/
+wheels/
+venv/
+env/
+*.log
+
+# C++ and CMake
+*.o
+*.a
+*.so
+*.dylib
+*.exe
+*.out
+/build
+/Debug
+/Release
+CMakeCache.txt
+CMakeFiles/
+*.cbp
+compile_commands.json
+
+# General
+*.edges
+.vscode/
+.idea/
+*.swp
+*~
+*.bak

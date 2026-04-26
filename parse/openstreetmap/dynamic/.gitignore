@@ -1,0 +1,4 @@
+*.o
+osm_extractor
+csv_to_bin
+osm4routing2
