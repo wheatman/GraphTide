@@ -6,7 +6,7 @@
 	url = https://github.com/cmuparlay/parlaylib.git
 [submodule "external/BYO"]
 	path = external/BYO
-	url = git@github.com:wheatman/BYO.git
+	url = https://github.com/wheatman/BYO.git
 [submodule "external/dynconn"]
 	path = external/dynconn
-	url = git@github.com:ParAlg/DynamicConnectivity.git
+	url = https://github.com/ParAlg/DynamicConnectivity.git

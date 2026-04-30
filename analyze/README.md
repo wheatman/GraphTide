@@ -3,7 +3,16 @@
 This directory contains C++ and Python tools to compute statistics on temporal graphs.
 
 # Build
-Dependencies are fetched automatically by CMake via `FetchContent`, so no manual submodule setup is required.
+`analyze` expects dependencies in `../external/` (from repo root).
+
+From the repo root, initialize dependencies:
+
+```bash
+git submodule sync --recursive
+git submodule update --init --recursive
+```
+
+Then build from `analyze/`:
 
 ```bash
 cmake -S . -B build
@@ -26,7 +35,7 @@ Runs are manual with `./build/run`. For example:
 - `--output` (string, default: `"del"`): directory where output CSVs are written.
 - `--print_freq` (uint64, default: `1000`): how often to append dynamic stats.
 - `--max_updates` (int64, default: `-1`): max number of updates to read; `-1` means read all updates.
-- `--edges_shuffle`: shuffle edge order before processing. Pass `--edges_shuffle` to enable and omit the flag to disable.
+- `--edges_shuffle`: shuffle edge order before processing. Pass `--edges_shuffle` to enable and `--noedges_shuffle` to disable.
 - `--src` (uint64, default: `1`): BFS source node used by static BFS metrics.
 - `--static_algorithm_count` (uint64, default: `0`): number of times to run static algorithms during the full run.
 - `--window_size` (uint64, default: `0`): for signal graphs, converts to a sliding-window interpretation; `0` disables windowing.

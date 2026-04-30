@@ -3,12 +3,25 @@ This repo is to aid in the collection and analysis of dynamic graph datasets.
 
 It is broken into a few different subdirectories.
 
+
+## Datasets
+Our datasets are publicly available at https://huggingface.co/datasets/DynamicGraphsProvider/GraphTide.
+
+## Dependencies Setup
+This repo expects shared third-party dependencies under `external/`.
+
+After cloning, run from the repo root:
+
+```bash
+git submodule sync --recursive
+git submodule update --init --recursive
+```
+
+
 ## analyze
 This directory helps to analyze a graph once it has been parsed. It is designed to run on a dynamic graph and determine statistics of the graph.
 
 For build and run instructions, see `analyze/README.md`.
-
-
 
 ## parse
 This directory contains code to help download and parse different dynamic graphs.
@@ -24,9 +37,9 @@ The first, and more common, is what we will call a signal graph.  These graphs e
 ### Update Graphs
 These are graphs of actual things. Where the graph is an exact graph of something and edges can be both added and removed explicitly.  For example in a road graph, roads will be opened and closed at exact times.
 
-## File format
+## File Format
 
-A few different file formats are used.
+A few different file formats are used. These are described in detail in `IO/README.md`.
 
 ### Signal Graphs 
 

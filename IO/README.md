@@ -1,5 +1,23 @@
 # Binary Graph Header Format
 
+## Build Dependency Note
+
+`IO.hpp` uses Abseil containers. To build `IO_test` via `IO/Makefile`, ensure
+`../external/abseil-cpp` exists first.
+
+From the repo root:
+
+```bash
+git submodule sync --recursive
+git submodule update --init --recursive
+```
+
+Then from `IO/`:
+
+```bash
+make
+```
+
 This file format is used to store metadata about a graph in a compact, binary representation. The format is intended to be read using C++ `ifstream` with `.read()`.
 
 ## Header Structure (Total: 8 fields)
