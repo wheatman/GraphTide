@@ -3,14 +3,18 @@ import sys
 import matplotlib.pyplot as plt
 
 
-if len(sys.argv) <= 2:
-    print("please give at least 1 input file along with the output file")
+USAGE = "Usage: python3 plot.py <input_csv_1> [<input_csv_2> ...] <output_prefix>"
 
 dfs = []
-for fname in sys.argv[2:]:
-    dfs.append((fname, pd.read_csv(fname, skipinitialspace=True)))
+if len(sys.argv) < 3:
+    print(USAGE)
+    sys.exit(1)
 
-output_prefix = sys.argv[1]
+input_files = sys.argv[1:-1]
+output_prefix = sys.argv[-1]
+
+for fname in input_files:
+    dfs.append((fname, pd.read_csv(fname, skipinitialspace=True)))
 
 for field in ["num_nodes", "num_edges", "average_degree", "max_degree", "num_triangles", "new_edges"]:
     longest_df = dfs[0][1]

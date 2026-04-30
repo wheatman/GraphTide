@@ -1,13 +1,45 @@
 # Real World Temporal Graphs
 
-* `absl` is now a dependency that has been added as a submodule in `external`
+This directory contains C++ and Python tools to compute statistics on temporal graphs.
 
-# Build 
-Builds with cmake run `cmake .`
+# Build
+Dependencies are fetched automatically by CMake via `FetchContent`, so no manual submodule setup is required.
+
+```bash
+cmake -S . -B build
+cmake --build build -j
+```
 
 # Run Benchmark
 
-Other runs must be done manually with the `./run` For more information see bellow.
+Runs are manual with `./build/run`. For example:
+
+```bash
+./build/run --output out --input /path/to/graph.bin --print_freq 1000 --src 1
+```
+
+## `run` Input Arguments
+
+`run` takes an input graph and writes CSV outputs into the output directory.
+
+- `--input` (string, default: `""`): path to the input graph file (typically `.bin`).
+- `--output` (string, default: `"del"`): directory where output CSVs are written.
+- `--print_freq` (uint64, default: `1000`): how often to append dynamic stats.
+- `--max_updates` (int64, default: `-1`): max number of updates to read; `-1` means read all updates.
+- `--edges_shuffle`: shuffle edge order before processing. Pass `--edges_shuffle` to enable and omit the flag to disable.
+- `--src` (uint64, default: `1`): BFS source node used by static BFS metrics.
+- `--static_algorithm_count` (uint64, default: `0`): number of times to run static algorithms during the full run.
+- `--window_size` (uint64, default: `0`): for signal graphs, converts to a sliding-window interpretation; `0` disables windowing.
+
+## Example: True vs Shuffled + Plot
+
+This example runs the same dataset twice (original order and shuffled order) and then overlays both result series in the same plots for direct comparison.
+
+```bash
+./build/run --input /path/to/graph.bin --output out/shuf --print_freq 1000 --src 1 --edges_shuffle
+./build/run --input /path/to/graph.bin --output out/true --print_freq 1000 --src 1 --noedges_shuffle
+python3 plot.py out/true/statistics.csv out/shuf/statistics.csv out/plot
+```
 
 # Explanation of files and programs 
 
