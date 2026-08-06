@@ -38,17 +38,39 @@ enum class DataType : uint8_t {
 };
 template <DataType DT> struct CType;
 
-template <> struct CType<DataType::NONE> { using type = empty; };
-template <> struct CType<DataType::UINT8> { using type = uint8_t; };
-template <> struct CType<DataType::UINT16> { using type = uint16_t; };
-template <> struct CType<DataType::UINT32> { using type = uint32_t; };
-template <> struct CType<DataType::UINT64> { using type = uint64_t; };
-template <> struct CType<DataType::INT8> { using type = int8_t; };
-template <> struct CType<DataType::INT16> { using type = int16_t; };
-template <> struct CType<DataType::INT32> { using type = int32_t; };
-template <> struct CType<DataType::INT64> { using type = int64_t; };
-template <> struct CType<DataType::FLOAT32> { using type = float; };
-template <> struct CType<DataType::FLOAT64> { using type = double; };
+template <> struct CType<DataType::NONE> {
+  using type = empty;
+};
+template <> struct CType<DataType::UINT8> {
+  using type = uint8_t;
+};
+template <> struct CType<DataType::UINT16> {
+  using type = uint16_t;
+};
+template <> struct CType<DataType::UINT32> {
+  using type = uint32_t;
+};
+template <> struct CType<DataType::UINT64> {
+  using type = uint64_t;
+};
+template <> struct CType<DataType::INT8> {
+  using type = int8_t;
+};
+template <> struct CType<DataType::INT16> {
+  using type = int16_t;
+};
+template <> struct CType<DataType::INT32> {
+  using type = int32_t;
+};
+template <> struct CType<DataType::INT64> {
+  using type = int64_t;
+};
+template <> struct CType<DataType::FLOAT32> {
+  using type = float;
+};
+template <> struct CType<DataType::FLOAT64> {
+  using type = double;
+};
 
 inline std::string data_type_to_string(DataType wt) {
   switch (wt) {
@@ -130,7 +152,14 @@ inline std::string update_info_to_string(UpdateInfo t) {
     return "DELETE";
   }
 }
-
+inline uint32_t update_info_to_uint(UpdateInfo t) {
+  switch (t) {
+  case UpdateInfo::INSERT:
+    return 1;
+  case UpdateInfo::DELETE:
+    return 0;
+  }
+}
 struct GraphHeader {
   uint64_t num_vertices = -1;
   uint64_t num_unique_edges = -1;
