@@ -57,3 +57,9 @@ add_executable(benchmark_hdt benchmark_hdt.cpp)
 target_include_directories(benchmark_hdt PRIVATE  ${CMAKE_CURRENT_SOURCE_DIR}/seq_hdt/dynamic_graph/include ${CMAKE_CURRENT_SOURCE_DIR}/../../)
 
 target_link_libraries(benchmark_hdt PRIVATE absl::flat_hash_map parlay Threads::Threads lib_dynamic_connectivity)
+
+add_executable(approx_diameter approx_diameter.cpp)
+
+target_include_directories(approx_diameter PRIVATE  ${CMAKE_CURRENT_SOURCE_DIR}/seq_hdt/dynamic_graph/include ${CMAKE_CURRENT_SOURCE_DIR}/../../)
+
+target_link_libraries(approx_diameter PRIVATE parlay Threads::Threads)

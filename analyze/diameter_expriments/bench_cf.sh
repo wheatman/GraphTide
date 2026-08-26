@@ -4,7 +4,7 @@ declare -a graph=(
   "asia"
   "australia-oceania"
   "central_america"
-  "europe.shuffled"
+  "europe"
   "north-america"
   "south-america"
   "wikipedia"
@@ -14,7 +14,7 @@ declare -a graph=(
 
 for g in "${graph[@]}"; do
   echo Running on ${g}.shuffled
-  ./build//benchmark_cf /ssd2/zhongqi/diameter_experiment/${g}.shuffled 
+  ./build/benchmark_cf /ssd2/zhongqi/diameter_experiment/${g}.shuffled 
   echo
 done
 

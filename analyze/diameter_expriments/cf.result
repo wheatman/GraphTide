@@ -1,0 +1,90 @@
+Running on africa.shuffled
+Reading file: /ssd2/zhongqi/diameter_experiment/africa.shuffled
+43817014 93230539
+Parlay time: updates: 595.7189
+
+Running on asia.shuffled
+Reading file: /ssd2/zhongqi/diameter_experiment/asia.shuffled
+124486147 273617428
+Parlay time: updates: 2862.9571
+
+Running on australia-oceania.shuffled
+Reading file: /ssd2/zhongqi/diameter_experiment/australia-oceania.shuffled
+8232884 20184818
+Parlay time: updates: 107.5928
+
+Running on central_america.shuffled
+Reading file: /ssd2/zhongqi/diameter_experiment/central_america.shuffled
+4454638 10373008
+Parlay time: updates: 44.7051
+
+Running on europe.shuffled
+Reading file: /ssd2/zhongqi/diameter_experiment/europe.shuffled
+169942207 430305178
+Parlay time: updates: 6361.9010
+
+Running on north-america.shuffled
+Reading file: /ssd2/zhongqi/diameter_experiment/north-america.shuffled
+112771288 250438136
+Parlay time: updates: 2354.1106
+
+Running on south-america.shuffled
+Reading file: /ssd2/zhongqi/diameter_experiment/south-america.shuffled
+26944705 69624949
+Parlay time: updates: 420.5352
+
+Running on wikipedia.shuffled
+Reading file: /ssd2/zhongqi/diameter_experiment/wikipedia.shuffled
+62489082 888464233
+Parlay time: updates: 3770.4445
+
+Running on planet.shuffled
+Reading file: /ssd2/zhongqi/diameter_experiment/planet.shuffled
+485492757 1135821343
+Parlay time: updates: 24248.8967
+
+Running on africa.undirect
+Reading file: /ssd2/zhongqi/diameter_experiment/africa.undirect
+43817014 93230539
+Parlay time: updates: 97.4138
+
+Running on asia.undirect
+Reading file: /ssd2/zhongqi/diameter_experiment/asia.undirect
+124486147 273617428
+Parlay time: updates: 331.5501
+
+Running on australia-oceania.undirect
+Reading file: /ssd2/zhongqi/diameter_experiment/australia-oceania.undirect
+8232884 20184818
+Parlay time: updates: 19.6832
+
+Running on central_america.undirect
+Reading file: /ssd2/zhongqi/diameter_experiment/central_america.undirect
+4454638 10373008
+Parlay time: updates: 9.5446
+
+Running on europe.undirect
+Reading file: /ssd2/zhongqi/diameter_experiment/europe.undirect
+169942207 430305178
+Parlay time: updates: 662.8308
+
+Running on north-america.undirect
+Reading file: /ssd2/zhongqi/diameter_experiment/north-america.undirect
+112771288 250438136
+Parlay time: updates: 328.9761
+
+Running on south-america.undirect
+Reading file: /ssd2/zhongqi/diameter_experiment/south-america.undirect
+26944705 69624949
+Parlay time: updates: 70.2251
+
+Running on wikipedia.undirect
+Reading file: /ssd2/zhongqi/diameter_experiment/wikipedia.undirect
+62489082 888464233
+Parlay time: updates: 1735.9223
+
+Running on planet.undirect
+Reading file: /ssd2/zhongqi/diameter_experiment/planet.undirect
+485492757 1135821343
+Parlay time: updates: 2077.9071
+

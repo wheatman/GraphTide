@@ -1,0 +1,89 @@
+Running on africa.shuffled
+Reading file: /ssd2/zhongqi/diameter_experiment/africa.shuffled
+43817014 93230539
+Parlay time: updates: 2001.7433
+
+Running on asia.shuffled
+Reading file: /ssd2/zhongqi/diameter_experiment/asia.shuffled
+124486147 273617428
+Parlay time: updates: 10689.4316
+
+Running on australia-oceania.shuffled
+Reading file: /ssd2/zhongqi/diameter_experiment/australia-oceania.shuffled
+8232884 20184818
+Parlay time: updates: 331.2198
+
+Running on central_america.shuffled
+Reading file: /ssd2/zhongqi/diameter_experiment/central_america.shuffled
+4454638 10373008
+Parlay time: updates: 82.5579
+
+Running on europe.shuffled
+Reading file: /ssd2/zhongqi/diameter_experiment/europe.shuffled
+169942207 430305178
+Parlay time: updates: 16240.3163
+
+Running on north-america.shuffled
+Reading file: /ssd2/zhongqi/diameter_experiment/north-america.shuffled
+112771288 250438136
+Parlay time: updates: 7443.1019
+
+Running on south-america.shuffled
+Reading file: /ssd2/zhongqi/diameter_experiment/south-america.shuffled
+26944705 69624949
+Parlay time: updates: 1433.3160
+
+Running on wikipedia.shuffled
+Reading file: /ssd2/zhongqi/diameter_experiment/wikipedia.shuffled
+62489082 888464233
+Parlay time: updates: 8272.7361
+
+Reading file: /ssd2/zhongqi/diameter_experiment/planet.shuffled
+485492757 1135821343
+./bench_hdt.sh: line 7: 1403043 Killed                  ./build//benchmark_hdt /ssd2/zhongqi/diameter_experiment/${g}.shuffled
+
+Running on africa.undirect
+Reading file: /ssd2/zhongqi/diameter_experiment/africa.undirect
+43817014 93230539
+Parlay time: updates: 244.0053
+
+Running on asia.undirect
+Reading file: /ssd2/zhongqi/diameter_experiment/asia.undirect
+124486147 273617428
+Parlay time: updates: 960.5403
+
+Running on australia-oceania.undirect
+Reading file: /ssd2/zhongqi/diameter_experiment/australia-oceania.undirect
+8232884 20184818
+Parlay time: updates: 36.0448
+
+Running on central_america.undirect
+Reading file: /ssd2/zhongqi/diameter_experiment/central_america.undirect
+4454638 10373008
+Parlay time: updates: 17.9030
+
+Running on europe.undirect
+Reading file: /ssd2/zhongqi/diameter_experiment/europe.undirect
+169942207 430305178
+Parlay time: updates: 1727.1139
+
+Running on north-america.undirect
+Reading file: /ssd2/zhongqi/diameter_experiment/north-america.undirect
+112771288 250438136
+Parlay time: updates: 955.9364
+
+Running on south-america.undirect
+Reading file: /ssd2/zhongqi/diameter_experiment/south-america.undirect
+26944705 69624949
+Parlay time: updates: 178.8003
+
+Running on wikipedia.undirect
+Reading file: /ssd2/zhongqi/diameter_experiment/wikipedia.undirect
+62489082 888464233
+Parlay time: updates: 2408.0453
+
+Running on planet.undirect
+Reading file: /ssd2/zhongqi/diameter_experiment/planet.undirect
+485492757 1135821343
+./bench_hdt.sh: line 21: 1414739 Killed                  ./build/benchmark_hdt /ssd2/zhongqi/diameter_experiment/${g}.undirect
+

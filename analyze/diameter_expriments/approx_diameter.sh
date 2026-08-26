@@ -14,13 +14,13 @@ declare -a graph=(
 
 for g in "${graph[@]}"; do
   echo Running on ${g}.shuffled
-  ./build/benchmark_dnd /ssd2/zhongqi/diameter_experiment/${g}.shuffled 
+  ./build/approx_diameter /ssd2/zhongqi/diameter_experiment/${g}.shuffled 32 > diameter_results/${g}_shuffled.txt
   echo
 done
 
 for g in "${graph[@]}"; do
   echo Running on ${g}.undirect
-  ./build/benchmark_dnd /ssd2/zhongqi/diameter_experiment/${g}.undirect
+  ./build/approx_diameter /ssd2/zhongqi/diameter_experiment/${g}.undirect 32 > diameter_results/${g}_undirect.txt
   echo
 done
 
