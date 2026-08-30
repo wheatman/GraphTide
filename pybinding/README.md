@@ -100,6 +100,25 @@ result.static    # DataFrame: timestep, timestamp, max_distance_from_src,
                  #            avg_coreness, max_coreness, ...
 ```
 
+### `pybinding.validate` -- Validate a binary graph
+
+Validate the header, file size, vertex-ID ranges, timestamp ordering, update
+types, and checksum without loading the full graph into memory:
+
+```bash
+python -m pybinding.validate graph.bin
+```
+
+For update graphs, an optional stateful replay detects repeated insertions and
+deletions of absent edges:
+
+```bash
+python -m pybinding.validate graph.bin --check-update-sequence
+```
+
+The stateful check uses memory proportional to the number of active edges. A
+complete JSON report can be saved with `--json report.json`.
+
 **Prerequisite:** Build the analysis binary first:
 
 ```bash

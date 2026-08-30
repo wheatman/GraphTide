@@ -7,6 +7,35 @@ It is broken into a few different subdirectories.
 ## Datasets
 Our datasets are publicly available at https://huggingface.co/datasets/DynamicGraphsProvider/GraphTide.
 
+## Contributing a Dataset
+
+We welcome community-contributed real-world dynamic graphs. A source parser is
+encouraged but is not required.
+
+The contribution process has two stages:
+
+1. Open a **New dataset proposal** issue in this GitHub repository with the
+   source, license, graph semantics, timestamp information, cleaning decisions,
+   and approximate size.
+2. After approval, validate the binary graph and upload it to the GraphTide
+   Hugging Face dataset as a pull request.
+
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the complete submission and
+cleaning guidelines.
+
+Before submitting a binary file, run:
+
+```bash
+python -m pybinding.validate /path/to/dataset.bin
+```
+
+For an update graph, the optional stateful check also verifies that insertions
+and deletions form a legal sequence:
+
+```bash
+python -m pybinding.validate /path/to/dataset.bin --check-update-sequence
+```
+
 ## Dependencies Setup
 This repo expects shared third-party dependencies under `external/`.
 
@@ -49,4 +78,4 @@ Some large files are stored with a .bin, in which the three fields are replaced 
 
 
 ### Update Graphs
-Update graphs need an additional field which specifies if it's an addition or a deletion.  This field is at the beginning of the elements about each edge. 
+Update graphs need an additional field which specifies if it's an addition or a deletion.  This field is at the beginning of the elements about each edge.

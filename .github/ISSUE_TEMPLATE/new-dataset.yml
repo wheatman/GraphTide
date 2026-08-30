@@ -1,0 +1,108 @@
+name: New dataset proposal
+description: Propose a real-world dynamic graph for inclusion in GraphTide
+title: "[Dataset]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please submit this proposal before uploading a large binary file. A
+        source parser is welcome but is not required.
+
+  - type: input
+    id: dataset_name
+    attributes:
+      label: Dataset name
+      description: Include a proposed short identifier if you have one.
+      placeholder: Example Graph (EXMP)
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: Source URL and snapshot
+      description: Link the public source and state its version or snapshot date.
+      placeholder: https://example.org/data, snapshot 2026-01-01
+    validations:
+      required: true
+
+  - type: textarea
+    id: citation_license
+    attributes:
+      label: Citation and license
+      description: Provide the citation and terms that permit redistribution.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: graph_type
+    attributes:
+      label: Dynamic graph type
+      options:
+        - Signal graph
+        - Update graph
+    validations:
+      required: true
+
+  - type: dropdown
+    id: direction
+    attributes:
+      label: Direction
+      options:
+        - Directed
+        - Undirected
+    validations:
+      required: true
+
+  - type: dropdown
+    id: weights
+    attributes:
+      label: Edge weights
+      options:
+        - Unweighted
+        - Weighted
+    validations:
+      required: true
+
+  - type: textarea
+    id: semantics
+    attributes:
+      label: Vertex and event semantics
+      description: Explain what vertices represent and what each edge signal or update means.
+    validations:
+      required: true
+
+  - type: textarea
+    id: timestamps
+    attributes:
+      label: Timestamp semantics
+      description: State the unit, covered time range, ordering, and tie-breaking rule.
+    validations:
+      required: true
+
+  - type: textarea
+    id: cleaning
+    attributes:
+      label: Cleaning and transformations
+      description: Describe invalid rows, exact duplicates, repeated signals, self-loops, vertex remapping, and any other transformations.
+    validations:
+      required: true
+
+  - type: textarea
+    id: size
+    attributes:
+      label: Estimated size
+      description: Report approximate vertices, unique edges, temporal events, and binary file size.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have reviewed the source terms and believe this processed graph can be redistributed.
+          required: true
+        - label: I have not included confidential data or raw identifier mappings that expose people or accounts.
+          required: true
+
