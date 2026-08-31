@@ -79,3 +79,36 @@ Some large files are stored with a .bin, in which the three fields are replaced 
 
 ### Update Graphs
 Update graphs need an additional field which specifies if it's an addition or a deletion.  This field is at the beginning of the elements about each edge.
+
+## FAQ
+
+### Were the released datasets cleaned?
+
+Yes. For the datasets currently released in GraphTide, malformed
+records and self-loops were removed. Repeated signals and parallel
+edges were retained when they represented distinct real-world events.
+Other processing decisions are source-specific; the available parsing
+code and documentation can be found under [`parse/`](parse/).
+
+### Can I change the timestamp unit or granularity?
+
+Yes. The canonical datasets preserve their original timestamps, but
+users can load a graph, transform its timestamp column, and convert it
+back to the GraphTide binary format. For example, a monotone rescaling
+can change timestamp units, while temporal binning can produce a
+coarser time granularity.
+
+### Can I introduce missing, noisy, or out-of-order events?
+
+Yes, by modifying the input DataFrame or CSV before calling
+`convert`. Events can be dropped, timestamps can be jittered, or rows
+can be reordered. GraphTide does not prescribe a standard noise model,
+because the appropriate transformation is application-dependent.
+Modified traces should be identified as derived data rather than
+replacements for the canonical real-order datasets.
+
+### Do I need to provide a parser when contributing a dataset?
+
+No. Providing a parser is encouraged but optional. Contributors can
+submit a documented binary graph through the process described in
+[`CONTRIBUTING.md`](CONTRIBUTING.md).
