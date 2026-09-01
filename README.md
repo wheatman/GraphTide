@@ -7,6 +7,8 @@ It is broken into a few different subdirectories.
 ## Datasets
 Our datasets are publicly available at https://huggingface.co/datasets/DynamicGraphsProvider/GraphTide.
 
+Shuffling often exposes vertices and edges earlier and can substantially change degree, triangle, and component trajectories; see the [qualitative real-vs.-shuffled summary](supplementary.pdf) ([LaTeX source](supplementary.tex)).
+
 ## Contributing a Dataset
 
 We welcome community-contributed real-world dynamic graphs. A source parser is

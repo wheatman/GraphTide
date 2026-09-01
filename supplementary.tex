@@ -1,0 +1,49 @@
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\documentclass[sigconf,screen,nonacm]{acmart}
+
+\usepackage{booktabs}
+
+\settopmatter{printacmref=false}
+\setcopyright{none}
+\renewcommand\footnotetextcopyrightpermission[1]{}
+\pagestyle{plain}
+
+\newcommand{\revision}[1]{{\color{RoyalBlue}#1}}
+
+\begin{document}
+\onecolumn
+
+\begin{table}[htbp]
+  \centering
+  \small
+  \setlength{\tabcolsep}{2pt}
+  \renewcommand{\arraystretch}{1.22}
+  \revision{
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l|llllllll@{}}
+    \toprule
+    \textbf{Cat.} &
+    \textbf{Arrivals} &
+    \textbf{Vertices} &
+    \textbf{Edges} &
+    \textbf{Avg. deg.} &
+    \textbf{Max deg.} &
+    \textbf{Triangles} &
+    \textbf{CC count} &
+    \textbf{Max CC} \\
+    \midrule
+    ADS & Uniform & Similar & Similar & R higher & R early; S late & Zero & S higher & Similar \\
+    REC & Ramp--plateau & S earlier & Similar & R higher & R higher & Mostly zero & S higher & Mixed \\
+    BLK & Late/spiky & S earlier & Similar & R higher & Mixed & R higher & S much higher & S earlier \\
+    COL & Coarse/late spikes & S earlier & Similar & Similar & Mixed & Mixed (R often) & S higher early & Mixed \\
+    SOC & Periodic/spiky & S earlier & S earlier & R higher & Similar & Mixed (R often) & S higher & Mixed \\
+    SW & Bursty ramp & S earlier & S earlier & R higher & R early & Zero (bipartite) & S much higher & --- \\
+    TRN & Nonstat./periodic & Similar & S earlier & S higher & Similar & S higher & Similar & Similar \\
+    UPD & Bursty/periodic & S earlier & S earlier & R higher & S peaks & S transient high & S much higher & Mixed \\
+    \bottomrule
+  \end{tabular*}
+  }
+  \caption{\revision{Qualitative patterns by graph category. ADS, REC, BLK, COL, SOC, SW, TRN, and UPD denote advertisement, recommendation, blockchain, collaboration, social, software, transportation, and update graphs, respectively. R and S denote the real-order and shuffled-order trajectories. ``Similar'' denotes only a small difference, ``mixed'' denotes within-category variation, and --- denotes no common pattern or no evaluation.}}
+  \label{tab:true-vs-shuffled-patterns}
+\end{table}
+
+\end{document}
