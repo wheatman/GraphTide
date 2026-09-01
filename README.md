@@ -7,7 +7,7 @@ It is broken into a few different subdirectories.
 ## Datasets
 Our datasets are publicly available at https://huggingface.co/datasets/DynamicGraphsProvider/GraphTide.
 
-Shuffling often exposes vertices and edges earlier and can substantially change degree, triangle, and component trajectories; see the [qualitative real-vs.-shuffled summary](supplementary.pdf).
+Shuffled graphs and real dynamic graphs exhibit substantial differences across many graph properties. The classification of the measured properties by graph category is summarized in the [supplementary material](supplementary.pdf).
 
 ## Contributing a Dataset
 
